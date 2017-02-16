@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Gem Collector Game</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+  <div class="container-fluid">
+  	<img class="img-responsive logo" src="assets/images/Logo.png">
+  	<div class="row left-section">
+		<div class="col-md-6 col-lg-6">
+			<div class="rules-section">
+				<h2 class="text-center rules-header">RULES:</h2>
+				<p>1. You will be given a random number</p>
+				<br>
+				<p>2. There are four crystals below.  By 
+				clicking on a crystal, you will add a 
+				specific amount of points to your 
+				total score.</p>
+				<br>
+				<p>3. You win the game by matching your
+				total score to a random number, you
+				lose the game if your total score goes
+				above the random number.</p>
+				<br>
+				<p>4. The value of each crystal is hidden
+				from you until you click on it.</p>
+				<br>
+				<p>5. Each time when the game starts, the
+				game will change the value of each
+				crystal.</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6">
+			<div class="row right-section">
+				<div class="col-md-6 col-lg-6">
+					<div class="game-section">
+						<h2 class="random-header">Random Number:</h2>
+						<h2 id="randomNumber" class="text-center"></h2>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 win-column">
+					<h3>Wins: <span id="wins"></span></h3>
+					<h3>Losses: <span id="losses"></span></h3>
+				</div>
+			</div><!--END INNER ROW-->
+
+			<div class="row img-section">
+				<div class="col-md-3 col-lg-3">
+					<img id="blue-gem" src="assets/images/blue-gem.png">
+				</div>
+				<div class="col-md-3 col-lg-3">
+					<img id="red-gem" src="assets/images/red-gem.png">
+				</div>
+				<div class="col-md-3 col-lg-3">
+					<img id="green-gem" src="assets/images/green-gem.png">
+				</div>
+				<div class="col-md-3 col-lg-3">
+					<img id="yellow-gem" src="assets/images/yellow-gem.png">
+				</div>
+
+			</div><!--END ROW-->
+			<h2 class="score text-center">Your Total Score Is: <span id="score-tracker"></span></h2>
+			<h2 id="results" class="text-center"></h2><button class="btn btn-md btn-primary play-again">Play Again!</button>
+		</div>
+  	</div><!--END ROW-->
+  	
+
+  	</div>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
